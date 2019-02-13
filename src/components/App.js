@@ -1,45 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-
-const Page1 = () => {
-	return (
-		<div>
-			<p>Page 1 </p>
-			<Link to="/2">Strona 2</Link>
-		</div>
-	);
-};
-
-const Page2 = () => {
-	return (
-		<div>
-			<p>Page 2 </p>
-			<Link to="/">Strona 1</Link>
-			<br />
-			<Link to="/2/3">Strona 3</Link>
-		</div>
-	);
-};
-
-const Page3 = () => {
-	return (
-		<div>
-			<p>Page 3 </p>
-			<Link to="/">Strona 1</Link>
-			<br />
-			<Link to="/2">Strona 2</Link>
-		</div>
-	);
-};
+import StreamCreate from './streams/StreamCreate';
+import StreamDelete from './streams/StreamDelete';
+import StreamEdit from './streams/StreamEdit';
+import StreamList from './streams/StreamList';
+import StreamShow from './streams/StreamShow';
 
 const App = () => {
 	return (
 		<div>
 			<BrowserRouter>
 				<div>
-					<Route path="/" exact component={Page1} />
-					<Route path="/2" exact component={Page2} />
-					<Route path="/2/3" exact component={Page3} />
+					<Route path="/" exact component={StreamList} />
+					<Route path="/streams/new" exact component={StreamCreate} />
+					<Route path="/streams/edit" exact component={StreamEdit} />
+					<Route path="/streams/delete" exact component={StreamDelete} />
+					<Route path="/streams/show" exact component={StreamShow} />
 				</div>
 			</BrowserRouter>
 		</div>
