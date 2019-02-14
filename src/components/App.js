@@ -6,6 +6,7 @@ import StreamEdit from './streams/StreamEdit';
 import StreamList from './streams/StreamList';
 import StreamShow from './streams/StreamShow';
 import NavBar from './NavBar';
+
 const App = () => {
 	return (
 		<div className="ui container">

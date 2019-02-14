@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GoogleAuth from './GoogleAuth';
 export default function NavBar() {
 	return (
 		<div className="ui secondary pointing menu">
@@ -13,6 +14,7 @@ export default function NavBar() {
 				<Link to="/" className="item">
 					All Streams
 				</Link>
+				<GoogleAuth />
 			</div>
 		</div>
 	);
