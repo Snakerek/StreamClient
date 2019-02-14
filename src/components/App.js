@@ -7,7 +7,6 @@ import StreamList from './streams/StreamList';
 import StreamShow from './streams/StreamShow';
 import NavBar from './NavBar';
 
-//Jeżeli to czytasz to jest to wersja z bez REDUX
 const App = () => {
 	return (
 		<div className="ui container">
