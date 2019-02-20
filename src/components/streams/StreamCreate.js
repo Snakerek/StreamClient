@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { createStream } from '../../actions';
+
 class StreamCreate extends Component {
 	renderError({ error, touched }) {
 		if (touched && error) {

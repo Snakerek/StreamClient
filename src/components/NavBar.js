@@ -7,9 +7,6 @@ export default function NavBar() {
 			<Link to="/" className="item">
 				Streamy
 			</Link>
-			<Link to="/streams/new" className="item">
-				New
-			</Link>
 			<div className="right menu">
 				<Link to="/" className="item">
 					All Streams
