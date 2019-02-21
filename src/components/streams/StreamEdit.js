@@ -10,7 +10,7 @@ export class StreamEdit extends Component {
 	}
 
 	onSubmit = (formValues) => {
-		console.log(formValues);
+		//console.log(formValues);
 
 		this.props.editStream(this.props.match.params.id, formValues);
 	};
