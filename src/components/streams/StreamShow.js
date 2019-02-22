@@ -7,6 +7,7 @@ export class StreamShow extends Component {
 		super(props);
 		this.videoRef = React.createRef();
 	}
+
 	componentDidMount() {
 		const { id } = this.props.match.params;
 
